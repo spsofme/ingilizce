@@ -1,0 +1,27 @@
+/* sidebar */
+#sidebar {
+	width: 280px;
+	height: 100vh;
+	border: 2px solid #DDDEE0;
+	border-top: 0px;
+	border-left: 0px;
+	border-bottom: 0px;
+}
+#sidebar > ul > li:hover { cursor: pointer; }
+
+/* içerik */
+#icerik {
+	max-height: 100vh !important;
+	overflow-y: auto !important;
+}
+#icerik #baslik + div {
+	width: 30%;
+}
+
+
+/* table */
+.table > tbody  tr > th { vertical-align: middle; }
+.table > tbody  tr > th:not([scope="row"]) { font-weight: normal; }
+
+/* icerik */
+#icerik > table:not(.active) { display: none; }

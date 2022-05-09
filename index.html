@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>İngilizce Not</title>
+
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+
+		<script src="./assets/js/libs.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+
+				<!-- sidebar -->
+				<div class="col-md-auto p-0">
+					<div class="d-flex flex-column flex-shrink-0 p-3 bg-light" id="sidebar">
+						<h3 class="text-center">Menü</h3>
+						
+						<hr>
+						
+						<ul class="nav nav-pills flex-column mb-auto">
+							<li target="kelimeler">
+								<a class="nav-link link-dark active">Kelimeler</a>
+							</li>
+							<li target="cumleler">
+								<a class="nav-link link-dark">Örnek Cümleler</a>
+							</li>
+							<li target="notlar">
+								<a class="nav-link link-dark">Notlar</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- içerik -->
+				<div class="col pt-3" id="icerik">
+					<div class="d-flex justify-content-between">
+						<h3 class="text-center ms-3" id="baslik">Kelimeler</h3>
+						<div class="input-group">
+							<input type="text" class="form-control" id="input_ara">
+							<button class="btn btn-outline-primary" id="btn_ara">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+									<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+								</svg>
+							</button>
+						</div>
+					</div>
+
+					<hr>
+					
+					<!-- kelimeler -->
+					<table class="table table-hover active" id="kelimeler">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Anlamı</th>
+								<th scope="col">Kelime</th>
+								<th scope="col">2. hali</th>
+								<th scope="col">3. hali</th>
+								<th scope="col">Eylem</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="ekle">
+								<th scope="row">-</th>
+								<th><input class="form-control" type="text" name="anlam" maxlength="150"></th>
+								<th><input class="form-control" type="text" name="kelime" maxlength="50"></th>
+								<th><input class="form-control" type="text" name="hal-2" maxlength="50"></th>
+								<th><input class="form-control" type="text" name="hal-3" maxlength="50"></th>
+								<th>
+									<button class="btn btn-outline-success">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+											<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+										</svg>
+									</button>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table table-hover" id="cumleler">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Türkçe</th>
+								<th scope="col">İngilizce</th>
+								<th scope="col">Eylem</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="ekle">
+								<th scope="row">-</th>
+								<th><input class="form-control" type="text" name="turkce" maxlength="200"></th>
+								<th><input class="form-control" type="text" name="ingilizce" maxlength="200"></th>
+								<th>
+									<button class="btn btn-outline-success">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+											<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+										</svg>
+									</button>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+
+					<table class="table table-hover" id="notlar">
+						<thead>
+							<tr>
+								<th scope="col">#</th>
+								<th scope="col">Başlık</th>
+								<th scope="col">İçerik</th>
+								<th scope="col">Eylem</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="ekle">
+								<th scope="row">-</th>
+								<th><input class="form-control" type="text" name="baslik" maxlength="50"></th>
+								<th><input class="form-control" type="text" name="icerik" maxlength="200"></th>
+								<th>
+									<button class="btn btn-outline-success">
+										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+											<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+										</svg>
+									</button>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<script src="./assets/js/main.js"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
+	</body>
+</html>
