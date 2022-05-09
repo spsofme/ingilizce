@@ -37,7 +37,6 @@ for (let i = 0; i < document.querySelectorAll('tr.ekle > th > button').length; i
 		veriler = [];
 		document.querySelectorAll(`#${menu} > tbody > tr > th > input`).forEach(element => {
 			element.value = element.value.trim();
-			//element.value = element.value.replaceAll(',', '-mycomma-');
 			veriler[veriler.length] = btoa(element.value);
 			element.value = '';
 		});
