@@ -9,4 +9,4 @@
 3. req.php dosyasında password değişkenine mysql sunucusunun şifresini girin.
 
 ## Ekran Görüntüleri
-![ekran görüntüsü](https://github.com/spsofme/ingilizce/ek/ss.png)
+![ekran görüntüsü](https://github.com/spsofme/ingilizce/blob/main/ek/ss.png)
