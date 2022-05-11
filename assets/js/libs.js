@@ -56,7 +56,7 @@ function sil(_tablo, _index) {
 	let i = 1;
 	document.querySelectorAll(`#${_tablo} > tbody > tr:nth-child(${_index+1}) > th`).forEach(element => {
 		if (i > 1 && i < document.querySelectorAll(`#${_tablo} > tbody > tr:nth-child(${_index+1}) > th`).length) {
-			veriler[veriler.length] = btoa(element.innerText);
+			veriler[veriler.length] = btoa(unescape(encodeURIComponent(element.innerText)));
 		}
 		i++;
 	});
