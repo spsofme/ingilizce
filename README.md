@@ -2,6 +2,7 @@
 - İngilizce çalışırken notlarınızı tutmaya yarayan yardımcı bir uygulama.
 - Tasarım [Bootstrap 5](https://getbootstrap.com/) kullanılarak yapılmıştır.
 - Backend kısmı Javascript fetch api ile geliştirilmiştir.
+- Veri tabanı olarak MYSQL kullanılıyor.
 
 ## Kurulum
 1. ek klasörü hariç diğer dosyaları localhost sunucunuza yükleyin.
